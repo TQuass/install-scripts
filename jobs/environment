@@ -1,0 +1,22 @@
+# from apache werelate settings
+export DB_HOST=localhost
+export DB_NAME=$DATABASE_NAME$
+export DB_USER=$DATABASE_USER$
+export DB_PASSWORD=$DATABASE_PASSWORD$
+export SEARCH_HOST=localhost
+export SEARCH_PORT=8080
+export SEARCH_PATH=/solr
+export WEB_HOST=localhost
+export UPLOAD_PATH=/images
+export UPLOAD_DIR=/mnt/images
+export GEDCOM_DIR=/mnt/gedcom
+export GEDCOM_ARCHIVE_DIR=/mnt/gedcom/archive
+export EMERGENCY_CONTACT=$YOUR_EMAIL$
+export DELETED_IMAGES_DIR=/mnt/deleted-images
+export LOG_DIR=/var/log/mediawiki
+export USE_MEMCACHED=true
+export MEMCACHED_SERVER=127.0.0.1:11211
+export USE_IMAGE_MAGICK=true
+export IMAGE_MAGICK_CONVERT_COMMAND=/usr/bin/convert
+export DIFF3_COMMAND=/usr/bin/diff3
+export DB_USER_ID=$DB_USER

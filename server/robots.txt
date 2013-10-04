@@ -1,0 +1,45 @@
+User-agent: BecomeBot
+Disallow: /
+
+User-agent: 008
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: bingbot
+Crawl-delay: 1
+Disallow: /downloads
+Disallow: /dlib
+Disallow: /images
+Disallow: /fte
+Disallow: /gedcom
+Disallow: /duplicates
+Disallow: /map
+Disallow: /renames
+Disallow: /videos
+Disallow: /placealpha
+Disallow: /placelist
+Disallow: /w/index.php?
+Disallow: /wiki/Special:
+Disallow: /wiki/Category:
+
+User-agent: *
+Disallow: /downloads
+Disallow: /dlib
+Disallow: /images
+Disallow: /fte
+Disallow: /gedcom
+Disallow: /duplicates
+Disallow: /map
+Disallow: /renames
+Disallow: /videos
+Disallow: /placealpha
+Disallow: /placelist
+Disallow: /w/index.php?
+Disallow: /wiki/Special:
+Disallow: /wiki/Category:
+

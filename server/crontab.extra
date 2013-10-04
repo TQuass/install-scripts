@@ -1,0 +1,8 @@
+# WERELATE JOBS
+*/5  *   * * *  ubuntu  /home/ubuntu/scripts/jobs/run-indexer.sh > /dev/null
+5    7   * * *  root    /home/ubuntu/scripts/jobs/delete-old-index-snapshots.sh
+*/5  *   * * *  ubuntu  /home/ubuntu/scripts/jobs/run-gedcom-uploader.sh
+30   9   * * 0  ubuntu  /home/ubuntu/scripts/jobs/run-update-special-pages.sh > /dev/null
+*/10 *   * * *  ubuntu  /home/ubuntu/scripts/jobs/run-wiki-jobs.sh > /dev/null
+# run-dump-pages is optional
+#25   5   * * *	ubuntu	/home/ubuntu/scripts/jobs/run-dump-pages.sh
