@@ -12,16 +12,12 @@ sudo mkdir -p /mnt/deleted-images && sudo chown www-data:www-data /mnt/deleted-i
 sudo mkdir -p /var/log/mediawiki && sudo chown www-data:www-data /var/log/mediawiki
 sudo mkdir -p /mnt/pages && sudo chown ubuntu:ubuntu /mnt/pages
 sudo mkdir -p /var/log/gedcom && sudo chown ubuntu:ubuntu /var/log/gedcom
-sudo mkdir -p /mnt/index/data/index
+sudo mkdir -p /mnt/index/data
 sudo chown ubuntu:ubuntu /mnt/index
 sudo chown tomcat7:tomcat7 /mnt/index/data
-sudo chown tomcat7:tomcat7 /mnt/index/data/index
 # check if we can tighten this up a bit later
 sudo mkdir -p /var/log/indexer && sudo chmod a+rwx /var/log/indexer
 sudo mkdir -p /var/log/snapshooter && sudo chmod a+rwx /var/log/snapshooter
-if ! [ -h search/logs ] ; then
-  ln -s /var/log/snapshooter/ search/logs
-fi
 
 # deploy applications
 install-scripts/apps/wiki/deploy.sh
@@ -29,6 +25,9 @@ install-scripts/apps/gedcom-review/deploy.sh
 install-scripts/apps/wikidata/deploy.sh
 install-scripts/apps/werelate-gedcom/deploy.sh
 install-scripts/apps/search/deploy.sh
+if ! [ -h search/logs ] ; then
+  ln -s /var/log/snapshooter/ search/logs
+fi
 
 # copy various files to www
 sudo cp install-scripts/server/robots.txt /var/www

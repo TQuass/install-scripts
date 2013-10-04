@@ -66,9 +66,11 @@ Finally, run `server/configure.sh`
 Running the software
 ====================
 
-* set the password for WikiSysop to the one you chose above: `php -q wiki/maintenance/changePassword.php --user=WikiSysop --password=YOUR_WIKI_ACCOUNT_PASSWORD`
-* start tomcat to run the search server
-* start apache to run the wiki
+* set the password for WikiSysop to the one you chose above:
+        source install-scripts/jobs/environment
+        php -q wiki/maintenance/changePassword.php --user=WikiSysop --password=YOUR_WIKI_ACCOUNT_PASSWORD
+* start tomcat to run the search server: `sudo /etc/init.d/tomcat7 start`
+* start apache to run the wiki: `sudo /etc/init.d/apache2 start`
 * append crontab.extra to your /etc/crontab file to run the indexer, gedcom uploader, etc.
 
 Caveats
