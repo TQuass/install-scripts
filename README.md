@@ -12,18 +12,18 @@ Requirements
 The WeRelate software requires the following to be installed:
 
 * a mail server like postfix
-* memcached _(assumed running on localhost port 11211; this is configurable)_
+* memcached -- _assumed running on localhost port 11211; this is configurable_
 * imagemagick
 * mysql
 * apache2
 * php5 php5-curl php5-cli php5-mysql php-apc php-pear
 * libapache2-mod-php5
 * install apache2 mods using a2enmod: deflate expires php5 rewrite proxy proxy_http
-* java _(needed only for search and gedcom upload - tested using openjdk-7-jdk)_
-* tomcat7 _(needed only for search and gedcom upload)_
-* git _(needed by the configure.sh script)_
-* ant and ant-optional _(needed by the configure.sh script)_
-* flex 3.5 _(needed only for gedcom review)_
+* java -- _needed only for search and gedcom upload - tested using openjdk-7-jdk_
+* tomcat7 -- _needed only for search and gedcom upload_
+* git -- _needed by the configure.sh script_
+* ant and ant-optional -- _needed by the configure.sh script_
+* flex 3.5 -- _needed only for gedcom review_
 
         mkdir /opt/flex3
         cd /opt/flex3
@@ -45,24 +45,24 @@ The following assumes that you are running all of the WeRelate processes on loca
 
 First, determine values for the following:
 
-* DATABASE_NAME -- the database that you imported the skeleton into
-* DATABASE_USER -- a database user that has full access to the database
-* DATABASE_PASSWORD -- password for that user
-* YOUR_WIKI_ACCOUNT_PASSWORD -- password for the WikiSysop user account
+* DATABASE_NAME -- _the database that you imported the skeleton into_
+* DATABASE_USER -- _a database user that has full access to the database_
+* DATABASE_PASSWORD -- _password for that user_
+* YOUR_WIKI_ACCOUNT_PASSWORD -- _password for the WikiSysop user account_
 * YOUR_EMAIL
 
 Next, fork this project and replace the placeholders in the following files with the values you determined.
 (I know there's a lot of redundancy here; I hope to eliminate most of it eventually):
 
 * apps/wiki/werelate
-* apps/search/db_memcache.properties _(needed only if you're running search)_
-* apps/search/indexer.properties _(needed only if you're running search)_
-* server/tomcat7.extra _(needed only if you're running search)_
-* apps/werelate-gedcom/gedcom.properties _(needed only if you're importing gedcoms)_
-* jobs/environment _(needed only if you're running cron jobs)_
+* apps/search/db_memcache.properties -- _needed only if you're running search_
+* apps/search/indexer.properties -- _needed only if you're running search_
+* server/tomcat7.extra -- _needed only if you're running search_
+* apps/werelate-gedcom/gedcom.properties -- _needed only if you're importing gedcoms_
+* jobs/environment -- _needed only if you're running cron jobs_
 * You may want to edit other scripts as well to suit your environment, especially if you are not running on ubuntu as user ubuntu.
 
-Finally, run `server/configure.sh`
+Finally, run `install-scripts/server/configure.sh`
 
 Running the software
 ====================
