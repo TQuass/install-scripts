@@ -60,7 +60,7 @@ Next, fork this project and replace the placeholders in the following files with
 * server/tomcat7.extra -- _needed only if you're running search_
 * apps/werelate-gedcom/gedcom.properties -- _needed only if you're importing gedcoms_
 * jobs/environment -- _needed only if you're running cron jobs_
-* You may want to edit other scripts as well to suit your environment, especially if you are not running on ubuntu as user ubuntu.
+* You may want to edit other scripts as well to suit your environment, especially if you are not running on localhost as user ubuntu.
 
 Finally, run `install-scripts/server/configure.sh`
 
