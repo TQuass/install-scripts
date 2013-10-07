@@ -36,6 +36,7 @@
 	SetEnv USE_IMAGE_MAGICK true
 	SetEnv IMAGE_MAGICK_CONVERT_COMMAND /usr/bin/convert
 	SetEnv DIFF3_COMMAND /usr/bin/diff3
+	SetEnv BOT_USER_ID 1
 	# if you want ads put the javascript code here
 	SetEnv AD_CODE ""
 
