@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ubuntu
-repo="git@github.com:werelate/search.git"
+repo="https://github.com/werelate/search.git"
 install-scripts/apps/git.sh $repo search
 cd search
 cp /home/ubuntu/install-scripts/apps/search/indexer.properties conf

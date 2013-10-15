@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ubuntu
-repo="git@github.com:werelate/wiki.git"
+repo="https://github.com/werelate/wiki.git"
 install-scripts/apps/git.sh $repo wiki
 sudo mkdir -p /var/www/w && sudo chown ubuntu:ubuntu /var/www/w
 rsync -a --exclude '.git' wiki/ /var/www/w/

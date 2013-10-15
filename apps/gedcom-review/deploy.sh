@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /home/ubuntu
-repo="git@github.com:werelate/gedcom-review.git"
+repo="https://github.com/werelate/gedcom-review.git"
 install-scripts/apps/git.sh $repo gedcom-review
 cd gedcom-review
 cp /home/ubuntu/install-scripts/apps/gedcom-review/build.properties .
