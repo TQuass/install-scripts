@@ -6,8 +6,8 @@ Installation and cron scripts for the WeRelate software.
 http://sandbox.werelate.org is configured using these scripts.
 It runs on a micro instance with Ubuntu 12.04 at Amazon Web Services.
 
-Requirements
-============
+Pre-requisites
+==============
 
 The WeRelate software requires the following to be installed:
 
@@ -19,6 +19,7 @@ The WeRelate software requires the following to be installed:
 * php5 php5-curl php5-cli php5-mysql php-apc php-pear
 * libapache2-mod-php5
 * install apache2 mods using a2enmod: deflate expires php5 rewrite proxy proxy_http
+* postfix or another mailer -- _for sending mail_
 * java -- _needed only for search and gedcom upload - tested using openjdk-7-jdk_
 * tomcat7 -- _needed only for search and gedcom upload_
 * git -- _needed by the configure.sh script_
@@ -75,6 +76,8 @@ Running the software
 * start tomcat to run the search server: `sudo /etc/init.d/tomcat7 start`
 * start apache to run the wiki: `sudo /etc/init.d/apache2 start`
 * append crontab.extra to your /etc/crontab file to run the indexer, gedcom uploader, etc.
+* sign in to the wiki as WikiSysop, click on Settings, change the email address, and
+confirm your new address by clicking on the link in the confirmation email.
 
 Caveats
 =======
