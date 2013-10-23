@@ -37,6 +37,7 @@
 	SetEnv IMAGE_MAGICK_CONVERT_COMMAND /usr/bin/convert
 	SetEnv DIFF3_COMMAND /usr/bin/diff3
 	SetEnv BOT_USER_ID 1
+	SetEnv ADMIN_USER_NAME WikiSysop
 	# if you want ads put the javascript code here
 	SetEnv AD_CODE ""
 
@@ -83,11 +84,6 @@
 		Allow from all
 		Deny from env=bad_bot
 	</Directory>
-
-	# redirect werelate.org to www.werelate.org
-	RewriteEngine on
-	RewriteCond %{HTTP_HOST} ^werelate\.org$ [NC]
-	RewriteRule ^(.*)$ http://www.werelate.org$1 [R=301,L]
 
 	# Configuration for MediaWiki url renaming
 	Alias /wiki /var/www/w/index.php

@@ -23,7 +23,7 @@ The WeRelate software requires the following to be installed:
 * tomcat7 -- _needed only for search and gedcom upload_
 * git -- _needed by the configure.sh script_
 * ant and ant-optional -- _needed by the configure.sh script_
-* flex 3.5 -- _needed only for gedcom review_
+* flex 3.5 -- _needed only for gedcom review_ -- make sure files are readable by the ubuntu user
 
         mkdir /opt/flex3
         cd /opt/flex3
