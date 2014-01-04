@@ -95,5 +95,3 @@ Roadmap
 The wiki software is running on an ancient version of MediaWiki.
 I'd like to start migrating the wiki software to the current version of MediaWiki.
 Help is welcome.
-
-test push
